@@ -3,13 +3,13 @@
 const express = require('express');
 const axios = require('axios');
 const bodyParser = require('body-parser');
-const cors = require('cors'); // Import cors module
+const cors = require('cors'); 
 const mongoose = require('mongoose');
 require("dotenv").config()
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors()); // Enable CORS
+app.use(cors()); 
 
 // Connect to MongoDB database
 mongoose.connect(process.env.mongoURL, {
